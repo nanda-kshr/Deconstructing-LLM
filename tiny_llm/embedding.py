@@ -40,4 +40,6 @@ class Embedding:
 
 e = Embedding()
 
-print(e.get_embedding("pizza"))
+print(e.similarity("pizza", "pasta"))
+print(e.similarity("pizza", "love"))
+print(e.similarity("pizza", "eat"))
