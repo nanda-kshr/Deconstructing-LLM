@@ -2,4 +2,4 @@
 class Tokenizer:
 
     def tokenize(self, text):
-        return text.split()
+        return [i.split() for i in text.split("\n")]
