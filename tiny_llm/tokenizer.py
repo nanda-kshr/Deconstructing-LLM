@@ -9,6 +9,7 @@ class Tokenizer:
 
     def fit(self, text):
         self.vocab = self.build_vocab()
+        self.vocab_size = len(self.vocab)
         self.token_to_id = {token: idx for idx, token in enumerate(self.vocab)}
         self.id_to_token = {idx: token for idx, token in enumerate(self.vocab)}
 
